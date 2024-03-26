@@ -4,7 +4,6 @@ from sklearn.metrics.pairwise import linear_kernel
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
-from PIL import Image
 
 page_bg_img = """
 <style>
