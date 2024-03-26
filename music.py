@@ -5,6 +5,15 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+background-image: url("https://e7.pngegg.com/pngimages/921/584/png-clipart-night-sky-star-desktop-night-blue-atmosphere-thumbnail.png");
+background-size: cover;
+}
+</style>
+"""
+
 st.set_page_config(
     page_title='Rekomendasi Lagu',
     layout="wide"
