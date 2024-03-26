@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://e7.pngegg.com/pngimages/921/584/png-clipart-night-sky-star-desktop-night-blue-atmosphere-thumbnail.png");
+background-image: url("https://www.dolby.com/siteassets/xf-site/blocks/hero/netflix-gradient.png");
 background-size: cover;
 }
 </style>
