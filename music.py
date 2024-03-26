@@ -4,6 +4,21 @@ from sklearn.metrics.pairwise import linear_kernel
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image
+
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L2thdGV2NjQ0N19hYnN0cmFjdF9zb3VuZF93YXZlLV92b2ljZV9kaWdpdGFsX3dhdmVmb3JtX3ZvbHVtZV92b181MDgxMGFmYS0yNjNkLTQxNWItOGNjNS0yMDFhNTdkNDFjYWFfMS5qcGc.jpg");
+background-size: cover;
+}
+</style>
+"""
+
+st.set_page_config(
+    page_title='Rekomendasi Lagu',
+    layout="wide"
+)
 
 def get_song_genre(lastfm_link):
     response = requests.get(lastfm_link)
